@@ -1,0 +1,10 @@
+# i) Ler número e mostrar o quadrado (sem guardar)
+print("i) QUADRADO DE UM NÚMERO")
+num = int(input("Digite um número inteiro: "))
+print(f"O quadrado de {num} é {num**2}")
+print("="*40)
+
+print(" i) quadrado de um numero")
+num = int(input("digite um número inteiro: "))
+print(f"O quadrado de {num} é {num**2}")
+print("="*40)
