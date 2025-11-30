@@ -1,20 +1,9 @@
-# b) Valor positivo ou cálculo de média com 4 notas
-N = int(input("Digite um valor inteiro (N): "))
+# Lê o número (pode ser positivo ou negativo)
+N = int(input("Digite um número (pode ser negativo): "))
 
-if N >= 0:
-    print(f"O valor lido é positivo: {N}")
-else:
-    print("Como o valor foi negativo, digite as 4 notas do aluno:")
-    N1 = float(input("Digite a nota 1: "))
-    N2 = float(input("Digite a nota 2: "))
-    N3 = float(input("Digite a nota 3: "))
-    N4 = float(input("Digite a nota 4: "))
-    
-    MD = (N1 + N2 + N3 + N4) / 4
-    
-    if MD >= 5:
-        print("Aprovado")
-    else:
-        print("Reprovado")
-    
-    print(f"Média final: {MD:.2f}")
+# Se for negativo, multiplica por -1
+if N < 0:
+    N = N * (-1)
+
+# Mostra o número sempre positivo
+print("O valor positivo é:", N)
