@@ -1,9 +1,8 @@
-# h) Faça um programa que leia 5 números e informe a soma e a média dos números.
+A = int(input("Digite A: "))
+B = int(input("Digite B: "))
+C = int(input("Digite C: "))
+D = int(input("Digite D: "))
 
-numeros = [float(input(f"Digite o {i+1}º número: ")) for i in range(5)]
-
-soma = sum(numeros)
-media = soma / 5
-
-print(f"Soma: {soma}")
-print(f"Média: {media:.2f}")
+for valor in [A, B, C, D]:
+    if valor % 2 == 0 or valor % 3 == 0:
+        print(valor)
