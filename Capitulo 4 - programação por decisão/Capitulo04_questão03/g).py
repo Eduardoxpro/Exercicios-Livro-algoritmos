@@ -1,14 +1,9 @@
-# g) Faça um programa que leia 5 números e informe o maior número.
 
-numeros = []
-for i in range(5):
-    num = float(input(f"Digite o {i+1}º número: "))
-    numeros.append(num)
+A = int(input("Digite A: "))
+B = int(input("Digite B: "))
+C = int(input("Digite C: "))
+D = int(input("Digite D: "))
 
-print(f"O maior número é: {max(numeros)}")
-# ou sem usar max():
-maior = numeros[0]
-for n in numeros:
-    if n > maior:
-        maior = n
-print(f"O maior número é: {maior}")
+for valor in [A, B, C, D]:
+    if valor % 2 == 0 and valor % 3 == 0:
+        print(valor)
