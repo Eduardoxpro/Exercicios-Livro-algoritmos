@@ -1,11 +1,17 @@
-# i) Faça um programa que receba do usuário um número N e uma frase.
-# Depois imprima a frase N vezes.
+A = int(input("Digite A: "))
+B = int(input("Digite B: "))
+C = int(input("Digite C: "))
+D = int(input("Digite D: "))
+E = int(input("Digite E: "))
 
-N = int(input("Digite o número de repetições: "))
-frase = input("Digite a frase: ")
+maior = A
+menor = A
 
-for _ in range(N):
-    print(frase)
+for valor in [B, C, D, E]:
+    if valor > maior:
+        maior = valor
+    if valor < menor:
+        menor = valor
 
-# ou mais simples:
-print(frase * N)  # repete a string N vezes (só funciona se não precisar de quebras de linha extras)
+print(f"Maior Valor: {maior}")
+print(f"Menor Valor: {menor}")
